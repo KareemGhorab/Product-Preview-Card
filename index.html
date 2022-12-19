@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Frontend Mentor | Product preview card component</title>
+	</head>
+	<body>
+		<main
+			class="bg-primary-500 min-h-screen flex justify-center items-center p-2"
+		>
+			<div
+				class="card bg-white border-black rounded-xl h-fit overflow-hidden pb-4 max-w-lg md:max-w-3xl md:pb-0 md:grid grid-cols-2"
+			>
+				<figure class="overflow-hidden col-span-1 bg-red-500">
+					<img
+						class="w-full h-full"
+						src="images/image-product-mobile.jpg"
+						alt="Perfume"
+					/>
+				</figure>
+				<main class="px-6 py-5 md:flex md:flex-col md:justify-between">
+					<article>
+						<div
+							class="badge font-montserrat tracking-huge uppercase text-secondary-700 text-xs"
+						>
+							Perfume
+						</div>
+						<h2 class="font-fraunces font-bold text-secondary-900 my-4">
+							Gabrielle Essence Eau De Parfum
+						</h2>
+						<p class="text-secondary-700 text-sm tracking-wide">
+							A floral, solar and voluptuous interpretation composed by Olivier
+							Polge, Perfumer-Creator for the House of CHANEL.
+						</p>
+					</article>
+					<footer>
+						<div class="flex items-center">
+							<div class="text-primary-800 font-fraunces text-3xl my-5">
+								$149.99
+							</div>
+							<div
+								class="text-secondary-700 ml-4 line-through decoration-secondary-700"
+							>
+								$169.99
+							</div>
+						</div>
+						<button
+							class="bg-primary-800 text-white py-3 flex justify-center font-bold items-center w-full mx-auto rounded-xl"
+						>
+							<svg
+								class="w-4"
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								strokeWidth="{1.5}"
+								stroke="currentColor"
+								className="w-6 h-6"
+							>
+								<path
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+								/>
+							</svg>
+							<span class="ml-2">Add to Cart</span>
+						</button>
+					</footer>
+				</main>
+			</div>
+		</main>
+	</body>
+</html>
